@@ -13,6 +13,7 @@
 		5BD2D5F72A6A9EE900728688 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2D5F62A6A9EE900728688 /* Preview Assets.xcassets */; };
 		5BD2D5FE2A6BD00300728688 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2D5FD2A6BD00300728688 /* Game.swift */; };
 		5BD2D6002A6BD0C300728688 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2D5FF2A6BD0C300728688 /* GameViewModel.swift */; };
+		5BD2D6052A6E72F200728688 /* GameDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2D6042A6E72F200728688 /* GameDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5BD2D5F62A6A9EE900728688 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5BD2D5FD2A6BD00300728688 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5BD2D5FF2A6BD0C300728688 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5BD2D6042A6E72F200728688 /* GameDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5BD2D5F32A6A9EE900728688 /* Assets.xcassets */,
 				5BD2D6032A6BF92900728688 /* GameAPI */,
 				5BD2D5F52A6A9EE900728688 /* Preview Content */,
+				5BD2D6042A6E72F200728688 /* GameDetailsView.swift */,
 			);
 			path = iGame;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD2D6002A6BD0C300728688 /* GameViewModel.swift in Sources */,
+				5BD2D6052A6E72F200728688 /* GameDetailsView.swift in Sources */,
 				5BD2D5F22A6A9EE700728688 /* ContentView.swift in Sources */,
 				5BD2D5FE2A6BD00300728688 /* Game.swift in Sources */,
 				5BD2D5F02A6A9EE700728688 /* iGameApp.swift in Sources */,
