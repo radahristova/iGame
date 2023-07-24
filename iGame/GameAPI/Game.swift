@@ -12,8 +12,10 @@ struct Game: Decodable, Identifiable, Hashable {
 	let title: String
 	let thumbnail: String
 	let platform: String
+	let description: String
 	
 	private enum CodingKeys: String, CodingKey {
 		case title, thumbnail, platform
+		case description = "short_description"
 	}
 }

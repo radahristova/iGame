@@ -11,7 +11,7 @@ import SwiftUI
 struct iGameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			ContentView(model: .init())
         }
     }
 }
