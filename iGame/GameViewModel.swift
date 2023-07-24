@@ -8,28 +8,20 @@
 import Foundation
 
 final class GameViewModel: ObservableObject {
-	@Published var games = [Game]()
-	
-	init() {
-		fetchData()
-	}
-	
-	func fetchData() {
+	func fetchData() async throws -> [Game] {
 		guard let url = URL(string: "https://www.freetogame.com/api/games") else {
-			return
+			throw URLError(.badURL)
 		}
 		
-		URLSession.shared.dataTask(with: url) { (data, _, _) in
-			if let data = data {
-				do {
-					let results = try JSONDecoder().decode(Array<Game>.self, from: data)
-					DispatchQueue.main.async {
-						self.games = results
-					}
-				} catch {
-					print("Error occured with: \(error)")
-				}
+		do {
+			let (data, _) = try await URLSession.shared.data(from: url)
+			do {
+				return try JSONDecoder().decode(Array<Game>.self, from: data)
+			} catch {
+				throw error
 			}
-		}.resume()
+		} catch {
+			throw error
+		}
 	}
 }
